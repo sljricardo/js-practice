@@ -117,8 +117,22 @@ console.log(result);
 // Exercicio 7
 // Cria uma função que receber 2 parametros e faz uma subtração do segundo ao primeiro.
 
+function subtraccao(p1, p2) {
+  return p2 - p1;
+}
+let x = subtraccao(3, 2);
+console.log(x);
+
 // Exercicio 8
 // Cria uma Função que recebe a idade de uma pessoa e diz se a pessoa é menor de idade ou adulta
+
+function age(idade) {
+  if (idade >= 18) return "adulto";
+  return "menor";
+}
+var input = 18;
+var result = age(input);
+console.log(result);
 
 // Exercicio 9
 // faz um log na consola do 2 elemento do array
