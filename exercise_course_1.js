@@ -5,6 +5,43 @@
 // Cria um Objecto com a propriedade idade e valor 34
 // Cria um array com 1 object que contem a propriadade idade e valor 34
 
+/* Cria um array com 4 numeros a tua escolha */
+
+var numeros = [10, 18, 30, 50];
+
+console.log(numeros);
+
+/* Cria um array com 3 strings a tua escolha */
+
+var país = ["portugal", "itália", "inglaterra"];
+
+console.log(país);
+
+/* Cria um array com 2 boleanos true e false */
+
+var array = [];
+for (i = 0; i < 2; i++) {
+  array[i] = i % 2 === 0;
+}
+
+console.log(array);
+
+/* Cria um Objecto com a propriedade idade e valor 34 */
+
+const object = {
+  idade: 34,
+};
+
+console.log(object);
+
+/* Cria um array com 1 object que contem a propriadade idade e valor 34 */
+
+var array = ["idade", 34];
+var object = {
+  array: 34,
+};
+console.log(array);
+
 // Exercicio 6
 // Cria uma função que verifica se um número fornecido é Impar ou não.
 // Deve retornar true caso seja impar ou false caso não seja.
