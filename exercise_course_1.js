@@ -6,28 +6,30 @@
 // Cria um array com 1 object que contem a propriadade idade e valor 34
 
 /* Cria um array com 4 numeros a tua escolha */
-
+// ✅ Correcto
 var numeros = [10, 18, 30, 50];
 
 console.log(numeros);
 
 /* Cria um array com 3 strings a tua escolha */
-
+// ✅ Correcto
 var país = ["portugal", "itália", "inglaterra"];
 
 console.log(país);
 
 /* Cria um array com 2 boleanos true e false */
+// ✅ Correcto MAS...
+const resolucao_mais_simples = [true, false];
 
 var array = [];
 for (i = 0; i < 2; i++) {
   array[i] = i % 2 === 0;
 }
 
-console.log(array);
+console.log(resolucao_mais_simples);
 
 /* Cria um Objecto com a propriedade idade e valor 34 */
-
+// ✅ Correcto
 const object = {
   idade: 34,
 };
@@ -35,12 +37,15 @@ const object = {
 console.log(object);
 
 /* Cria um array com 1 object que contem a propriadade idade e valor 34 */
+// ❌
+const array_com_objecto_idade_34 = [{ idade: 34 }];
 
 var array = ["idade", 34];
-var object = {
+// Nao podes redeclarar a variavel object pk ja declarast como const anteriorment
+var object2 = {
   array: 34,
 };
-console.log(array);
+console.log(array_com_objecto_idade_34);
 
 // Exercicio 6
 // Cria uma função que verifica se um número fornecido é Impar ou não.
