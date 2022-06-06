@@ -53,12 +53,60 @@ console.log(obj_idade[0].idade);
 // Exercicio 6
 // Cria uma função que verifica se um número fornecido é Impar ou não.
 // Deve retornar true caso seja impar ou false caso não seja.
+// Documentação adicional https://www.w3schools.com/jsref/jsref_operators.asp
 
+// ✅ Correcto
 function impar(numero) {
   if (numero % 2 === 0) {
     return false;
   }
   return true;
+}
+
+// Outras possiveis resoluções
+
+function isImpar_(numero) {
+  // Podemos inverter o operador e retornar logo
+  if (numero % 2 !== 0) {
+    return true;
+  }
+
+  return false;
+}
+
+function _isImpar_(numero) {
+  // O Javascript permite criares um if statment sem chavetas desde que tenha apenas uma linha a seguir
+  if (numero % 2 !== 0) return true;
+
+  return false;
+}
+
+function isImpar(numero) {
+  // Operação Trenário
+  // variablename = (condition) ? value1:value2
+  // Example:
+  // const voteable = (age < 18) ? "Too young":"Old enough";
+  return numero % 2 === 0 ? false : true;
+}
+
+function _isImpar(numero) {
+  // Podemos retornar o resultado directamente da operação matematica (numero % 2 !== 0)
+  // Nos aqui invertemos o operador.
+  /*
+    Imagina que x é igual a 5
+    x = 5
+
+    ===	  equal value and equal type	  x === "5"	  false	
+                                        x === 5	    true
+
+    !==	  not equal value or not equal type	  x !== "5"	  true	
+                                              x !== 5	    false
+
+    ==	  equal to	    x == 8	false	
+                        x == 5	true
+    !=	  not equal	    x != 8	true
+  */
+  return numero % 2 !== 0;
 }
 
 var input = 31;
