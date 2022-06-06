@@ -28,6 +28,11 @@ for (i = 0; i < 2; i++) {
 
 console.log(resolucao_mais_simples);
 
+ou;
+
+const boleanos = [true, false];
+console.log(boleanos);
+
 /* Cria um Objecto com a propriedade idade e valor 34 */
 // ✅ Correcto
 const object = {
@@ -38,18 +43,28 @@ console.log(object);
 
 /* Cria um array com 1 object que contem a propriadade idade e valor 34 */
 // ❌
-const array_com_objecto_idade_34 = [{ idade: 34 }];
-
+const obj_idade = [{ idade: 34 }];
 var array = ["idade", 34];
-// Nao podes redeclarar a variavel object pk ja declarast como const anteriorment
 var object2 = {
   array: 34,
 };
-console.log(array_com_objecto_idade_34);
+console.log(obj_idade[0].idade);
 
 // Exercicio 6
 // Cria uma função que verifica se um número fornecido é Impar ou não.
 // Deve retornar true caso seja impar ou false caso não seja.
+
+function impar(numero) {
+  if (numero % 2 === 0) {
+    return false;
+  }
+  return true;
+}
+
+var input = 31;
+var result = impar(input);
+
+console.log(result);
 
 // Exercicio 7
 // Cria uma função que receber 2 parametros e faz uma subtração do segundo ao primeiro.
