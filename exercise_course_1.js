@@ -136,11 +136,15 @@ console.log(result);
 
 // Exercicio 9
 // faz um log na consola do 2 elemento do array
+
 const PessoasIdades = [18, 34];
+console.log(PessoasIdades[1]);
 
 // Exercicio 10
 // faz um log na consola da idade do 2 elemento do array
+
 const Pessoas = [{ idade: 18 }, { idade: 34 }];
+console.log(Pessoas[1].idade);
 
 // Exercicio 11
 // Cria uma função de receber um array e soma todos os elementos do array. exemplo
