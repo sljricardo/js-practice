@@ -150,8 +150,33 @@ console.log(Pessoas[1].idade);
 // Cria uma função de receber um array e soma todos os elementos do array. exemplo
 const SomaTodosOsElementosDesteArray = [1, 2, 3]; // deve retornar o numero 6
 
+let sum = 0;
+
+for (let i = 0; i < SomaTodosOsElementosDesteArray.length; i++) {
+  sum += SomaTodosOsElementosDesteArray[i];
+}
+
+console.log(sum);
+
 // Exercicio 12
 // Cria uma função de recebe um numero e retorna a string Par ou Impar caso o numero seja par ou impar
 
 // Exercicio 13
 // Cria uma função que recebe uma idade que é um numero e retorna Jovem (se a idade for inferior a 18), Adulto (se for maior ou igual a 18 e menor que 65) e Sénior (se for maior que 65)
+
+// Exercicio 14
+// Cria uma função que recebe 2 argumentos nome e idade exemplo
+// pessoa("ricardo", 34)
+// e tem de devolver um objecto com as propriedades {nome: "ricardo", idade: 34}
+
+// Exercicio 15
+function meuNome() {
+  return "Nome do utilizador";
+}
+// Cria uma função que recebe como argumento a função anteiror "meuNome" e faz console log do resultado dentro da função criada por ti
+
+// Exercidio 16
+// Cria uma função que recebe um array no primeiro elemento e no segundo elemento uma função e deve retornar um array filtrado de acordo com a função passada Exemplo:
+// function filter(array, func)
+// ao involcares a funcao filter com um array e com a tua função impar, deve ser retornado um array novo com os impars
+// filter([0,1,2,3,5], impar) -> devolve [1,3,5]
