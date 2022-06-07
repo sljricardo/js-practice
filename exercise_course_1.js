@@ -150,13 +150,17 @@ console.log(Pessoas[1].idade);
 // Cria uma função de receber um array e soma todos os elementos do array. exemplo
 const SomaTodosOsElementosDesteArray = [1, 2, 3]; // deve retornar o numero 6
 
-let sum = 0;
-
-for (let i = 0; i < SomaTodosOsElementosDesteArray.length; i++) {
-  sum += SomaTodosOsElementosDesteArray[i];
+function soma(arr) {
+  let sum = 0;
+  if (typeof arr !== "object") return null;
+  console.log(typeof arr);
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
 
-console.log(sum);
+console.log(soma(SomaTodosOsElementosDesteArray));
 
 // Exercicio 12
 // Cria uma função de recebe um numero e retorna a string Par ou Impar caso o numero seja par ou impar
