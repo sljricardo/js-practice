@@ -164,6 +164,19 @@ console.log(soma(SomaTodosOsElementosDesteArray));
 
 // Exercicio 12
 // Cria uma função de recebe um numero e retorna a string Par ou Impar caso o numero seja par ou impar
+function par_impar(numero) {
+  if (typeof numero === "string") return null;
+  console.log(typeof numero);
+
+  if (numero % 2 === 0) {
+    return "par";
+  }
+  return "impar";
+}
+var input = 10;
+var result = par_impar(input);
+
+console.log(result);
 
 // Exercicio 13
 // Cria uma função que recebe uma idade que é um numero e retorna Jovem (se a idade for inferior a 18), Adulto (se for maior ou igual a 18 e menor que 65) e Sénior (se for maior que 65)
