@@ -187,12 +187,20 @@ console.log(result);
 // e tem de devolver um objecto com as propriedades {nome: "ricardo", idade: 34}
 
 // Exercicio 15
+// Cria uma função que recebe um array objecto { dia: 20, mes: 8, ano: 1980 }
+// e deve retornar a String "20 de Agosto de 1980"
+
+// Exercicio 16
+// Cria uma função que recebe uma String exemplo "hello"
+// e deve retornar a string invertida exemplo "olleh"
+
+// Exercicio 17
 function meuNome() {
   return "Nome do utilizador";
 }
 // Cria uma função que recebe como argumento a função anteiror "meuNome" e faz console log do resultado dentro da função criada por ti
 
-// Exercidio 16
+// Exercidio 18
 // Cria uma função que recebe um array no primeiro elemento e no segundo elemento uma função e deve retornar um array filtrado de acordo com a função passada Exemplo:
 // function filter(array, func)
 // ao involcares a funcao filter com um array e com a tua função impar, deve ser retornado um array novo com os impars
