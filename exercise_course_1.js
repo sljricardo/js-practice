@@ -181,6 +181,18 @@ console.log(result);
 // Exercicio 13
 // Cria uma função que recebe uma idade que é um numero e retorna Jovem (se a idade for inferior a 18), Adulto (se for maior ou igual a 18 e menor que 65) e Sénior (se for maior que 65)
 
+function recebeIdade(num) {
+  if (num < 18) {
+    return "jovem";
+  } else if (num > 18 && num < 65) {
+    return "adulto";
+  } else if (num > 65) {
+    return "senior";
+  }
+}
+
+console.log(recebeIdade(17));
+
 // Exercicio 14
 // Cria uma função que recebe 2 argumentos nome e idade exemplo
 // pessoa("ricardo", 34)
