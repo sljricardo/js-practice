@@ -198,6 +198,18 @@ console.log(recebeIdade(17));
 // pessoa("ricardo", 34)
 // e tem de devolver um objecto com as propriedades {nome: "ricardo", idade: 34}
 
+function pessoa(nome, idade, sexo) {
+  let name = nome;
+  let age = idade;
+
+  return {
+    nome: name,
+    idade: age,
+  };
+}
+
+console.log(pessoa("ricardo", 34));
+
 // Exercicio 15
 // Cria uma função que recebe um array objecto { dia: 20, mes: 8, ano: 1980 }
 // e deve retornar a String "20 de Agosto de 1980"
