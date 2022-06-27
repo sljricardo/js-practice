@@ -229,6 +229,52 @@ console.log(arrayObj(object));
 // Cria uma função que recebe uma String exemplo "hello"
 // e deve retornar a string invertida exemplo "olleh"
 
+// Exercicio 16
+// Cria uma função que recebe uma String exemplo "hello"
+// e deve retornar a string invertida exemplo "olleh"
+
+function reverseString(str) {
+  let novaString = str.split("");
+  let reverseArray = novaString.reverse("");
+  let arrayToString = reverseArray.join("");
+  return arrayToString;
+}
+
+console.log(reverseString("hello"));
+
+//ou
+
+function reverseString(str) {
+  let novaString = str.split("");
+  console.log(novaString);
+  let reverseString = novaString.reverse("");
+  console.log(reverseString);
+  for (let i = reverseString - 1; i >= 0; i--) {
+    reverseString += str[i];
+  }
+  return reverseString.join("");
+}
+console.log(reverseString("hello"));
+
+// ou
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("hello"));
+
+// ou
+
+function reverseString(str) {
+  let reverseString = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseString += str[i];
+  }
+  return reverseString;
+}
+console.log(reverseString("hello"));
+
 // Exercicio 17
 function meuNome() {
   return "Nome do utilizador";
