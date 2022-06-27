@@ -214,6 +214,17 @@ console.log(pessoa("ricardo", 34));
 // Cria uma função que recebe um array objecto { dia: 20, mes: 8, ano: 1980 }
 // e deve retornar a String "20 de Agosto de 1980"
 
+function arrayObj({ dia, mes, ano }) {
+  return `${dia} de ${mes} de ${ano}`;
+}
+let object = {
+  dia: 20,
+  mes: "Agosto",
+  ano: 1980,
+};
+
+console.log(arrayObj(object));
+
 // Exercicio 16
 // Cria uma função que recebe uma String exemplo "hello"
 // e deve retornar a string invertida exemplo "olleh"
