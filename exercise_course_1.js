@@ -276,9 +276,19 @@ function reverseString(str) {
 console.log(reverseString("hello"));
 
 // Exercicio 17
+/* function meuNome() {
+  return "Nome do utilizador";
+} */
+
 function meuNome() {
   return "Nome do utilizador";
 }
+
+function funcaoAnterior(funcao) {
+  console.log(funcao());
+}
+
+funcaoAnterior(meuNome);
 // Cria uma função que recebe como argumento a função anteiror "meuNome" e faz console log do resultado dentro da função criada por ti
 
 // Exercidio 18
