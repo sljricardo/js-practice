@@ -296,3 +296,43 @@ funcaoAnterior(meuNome);
 // function filter(array, func)
 // ao involcares a funcao filter com um array e com a tua função impar, deve ser retornado um array novo com os impars
 // filter([0,1,2,3,5], impar) -> devolve [1,3,5]
+
+
+function impar(numero) {
+  if (numero %2 === 0) {
+    return false
+  }
+  return true;
+}
+
+
+function filter([1,2,3,4,5], impar) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(func(array[i])) {
+      newArray.push(array[i])
+    }
+    return newArray
+  }
+
+}
+
+filter([1,2,3,4,5], impar);
+
+ou
+
+function impar(numero) {
+  if (numero % 2 === 0) {
+    return false;
+  }
+  return true;
+}
+
+function getOddFromArray(array, func) {
+  return array.filter(value => {
+    if(func(value)) {
+      return value
+    }
+  });
+}
+
+getOddFromArray([1,2,3,4,5], impar);
